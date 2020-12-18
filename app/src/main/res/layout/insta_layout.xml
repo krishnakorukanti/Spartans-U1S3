@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_vector__2_" />
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/backBtn"
+        android:drawableRight="@drawable/ic_telegram_1"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Telegram"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/dpImage"
+        android:layout_width="118dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/topText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/prateek_sukla1" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/dpImage"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Prateek shukla"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/oneHash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileName"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dpImage"
+        android:fontFamily="@font/roboto_medium"
+        android:text="# Startup"
+        android:textColor="#FF0000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/twoHash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oneHash"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dpImage"
+        android:fontFamily="@font/roboto_medium"
+        android:text="# Education"
+        android:textColor="#00FF00"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/threeHash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twoHash"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dpImage"
+        android:fontFamily="@font/roboto_medium"
+        android:text="# Transformation"
+        android:textColor="#0000FF"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/followersDis"
+        android:layout_height="wrap_content"
+        android:text="28M Followers 12 Following"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/dpImage"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/roboto_medium"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/followersDis"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/outline"
+            android:text="Follow"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/outline"
+            android:text="Message"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/photosDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/prateek_sukla1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/prateek_sukla1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/prateek_sukla1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/prateek_sukla1" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline"
+        android:padding="10dp"
+        android:id="@+id/iconsDisplay"
+        android:layout_above="@id/photosDisplay"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bi_grid_3x3"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vector__3_"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

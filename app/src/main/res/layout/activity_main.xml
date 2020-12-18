@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E43F3F"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Famous"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="289dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailView"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/ic_carbon_email"
+        android:drawablePadding="10dp"
+        android:hint="masaischool@gmail.com"
+        android:textColorHint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/passView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailET"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/passET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passView"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/ic_vector__1"
+        android:drawablePadding="10dp"
+        android:hint="admin@1234"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passET"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="25dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:text="No account yet ? Sign up"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
